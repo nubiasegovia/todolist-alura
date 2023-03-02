@@ -1,0 +1,124 @@
+
+.header {
+  height: 100%;
+  padding: 2%;
+  background-color: #0B2027;
+  border-bottom: 1px solid #7798AB;
+  color: #7798AB;
+  text-transform: uppercase;
+  font-family: "BioRhyme", serif;
+  font-weight: 700;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #0B2027;
+}
+
+.todo-list {
+  background-color: #0B2027;
+  font-family: "Space Mono", monospace;
+  padding: 1rem;
+  min-width: 400px;
+  min-height: 300px;
+}
+
+.todo-list__title {
+  border-bottom: 1px solid #7798AB;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-family: "BioRhyme", serif;
+  color: #7798AB;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.form__input {
+  outline: none;
+  background-color: #7798AB;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.form__input, .form__button {
+  border-radius: 0;
+  padding: 0.75rem;
+  font-size: 0.75rem;
+}
+
+.form__button {
+  border: 1px;
+  background: #7798AB;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-left: 0.25rem;
+  transition: all 0.2s;
+}
+
+.form__button:hover {
+  color: #7798AB;
+  background: rgba(246, 241, 209, 0.1);
+}
+
+.form__input {
+  outline: none;
+  background-color: #7798AB;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.list {
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.task {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #7798AB;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  padding: 1rem 3rem;
+}
+
+.check__button, .delete__button {
+  background-color: #7798AB;
+  border: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  outline: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.task.done .check__button {
+  background-color: #46494C;
+  color: #7798AB;
+}
+
+.check__icon {
+  display: block;
+  padding: 1px;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.task.done .check__icon {
+  background-color: #0B2027;
+}
+
+.content {
+  margin: 0;
+}
+
+.task.done .content {
+  text-decoration: line-through;
+}
