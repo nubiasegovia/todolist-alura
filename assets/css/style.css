@@ -23,11 +23,12 @@
   background-color: #0B2027;
   font-family: "Space Mono", monospace;
   padding: 1rem;
-  min-width: 400px;
-  min-height: 300px;
+  width: 70%;
+  max-width: 700px;
 }
 
 .todo-list__title {
+  text-align: center;
   border-bottom: 1px solid #7798AB;
   padding: 1rem 0;
   margin-bottom: 1rem;
@@ -38,13 +39,14 @@
 
 .form {
   display: flex;
-  justify-content: center;
+  width: 100%;
 }
 
 .form__input {
   outline: none;
   background-color: #7798AB;
   border-color: rgba(255, 255, 255, 0.1);
+  width: 70%;
 }
 
 .form__input, .form__button {
@@ -60,17 +62,12 @@
   cursor: pointer;
   margin-left: 0.25rem;
   transition: all 0.2s;
+  width: 30%;
 }
 
 .form__button:hover {
   color: #7798AB;
   background: rgba(246, 241, 209, 0.1);
-}
-
-.form__input {
-  outline: none;
-  background-color: #7798AB;
-  border-color: rgba(255, 255, 255, 0.1);
 }
 
 .list {
@@ -86,7 +83,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 0.5rem;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
 }
 
 .check__button, .delete__button {
