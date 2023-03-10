@@ -12,6 +12,7 @@
 
     tarefa.innerHTML = conteudo;
     tarefa.appendChild(BotaoConcluir());
+    tarefa.appendChild(BotaoDeletar());
     lista.appendChild(tarefa);
     input.value = ' ';
 }
@@ -34,4 +35,22 @@ const concluirTarefa = (evento) => {
     const tarefaCompleta = botaoConcluir.parentElement;
     tarefaCompleta.classList.toggle('done');
 }
+
+const BotaoDeletar = () => {
+    const botaoDeletar = document.createElement('button');
+    botaoDeletar.classList.add('delete__button');
+    botaoDeletar.innerText = 'deletar';
+    botaoDeletar.addEventListener('click', deletarTarefa)
+
+    return botaoDeletar;
+}
+
+const deletarTarefa = (evento) => {
+    const botaoDeletar = evento.target;
+    const tarefaExcluida = botaoDeletar.parentElement;
+    tarefaExcluida.remove();
+
+    return botaoDeletar;
+}
+
 })()
