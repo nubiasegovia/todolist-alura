@@ -1,4 +1,4 @@
-# 📝 Fruto e Fruta </p>
+# 📝 To do list </p>
 
 Projeto de estudo desenvolvido durante o curso "JavaScript na Web: manipule o DOM com JavaScript" na plataforma da Alura.
 
